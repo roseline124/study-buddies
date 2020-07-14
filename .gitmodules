@@ -1,0 +1,3 @@
+[submodule "study-buddies-server"]
+	path = study-buddies-server
+	url = https://github.com/angelhack-study-buddies/study-buddies-server.git
