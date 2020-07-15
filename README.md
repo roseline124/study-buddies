@@ -1,1 +1,3 @@
 # study-buddies
+
+![fusion](https://lh3.googleusercontent.com/proxy/BeEU_bEBtKtKOWZ1RQkAj_0WmGZfqSO2GC2o2zNNZAmTBQ2n_wSFzJZL0YxGs9w77dMNWNsyEYc352GDgfLsEAAVw8xpqJ2hHb3InlW4KNYjidivArAo)
