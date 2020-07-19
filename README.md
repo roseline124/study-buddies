@@ -33,3 +33,24 @@ Database 는 MySQL (Amazon RDS) 를 사용하였고
 
 `좋아요` 와 `follow` 기능을 추가하여 인기 컨텐츠를 파악 할 수 있게 하였고
 추후 `인기 컨텐츠`와 카테고리에 대해 관리자가 featured 로 지정 하는 방식으로 교육 과정 제작과 연계 될 수 있을 것으로 기대 합니다.
+
+### 프로필 조회
+
+![profile](images/profile.png)
+
+### 게시물 등록
+
+![post](images/post.png)
+
+### 게시물 조회 및 연속 학습 일 수
+
+![daily-posting](images/daily-posting.png)
+
+### 팔로우
+
+![follow](images/follow.png)
+
+### 추천
+
+![recommendation](images/recommendation.png)
+
