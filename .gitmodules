@@ -1,0 +1,6 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/roseline124/study-buddies-server.git
+[submodule "client"]
+	path = client
+	url = https://github.com/roseline124/study-buddies-client.git
