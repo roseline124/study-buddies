@@ -1,11 +1,15 @@
 # study buddies
 
-두 개의 submodule 로 이루어져 있습니다.
+[Korean README.md is here!](https://github.com/roseline124/study-buddies/blob/dev/README.kr.md)
+
+## add submodules
+
+This repository consists of two submodules.
 
 - [server](https://github.com/roseline124/study-buddies-server)
 - [client](https://github.com/roseline124/study-buddies-client)
 
-한꺼번에 다운로드 받기 위해서는 아래 명령어를 이용합니다.
+Run command below to add all submodules at once.
 
 ```
 git clone --recurse-submodules git@github.com:roseline124/study-buddies.git
@@ -13,43 +17,57 @@ or
 git clone --recurse-submodules https://github.com/roseline124/study-buddies.git
 ```
 
-## 개발
+To give submodule name or path, run command below.
+don't forget trailing slash after path.
 
-개발은 [graphql](https://graphql.org) 을 이용 하였고
-서버는 [apollo](http://apollographql.com), 웹은 [react](https://www.apollographql.com/docs/react) 를 사용 하였습니다.
+```
+git submodule add --name {name} {repository-url} {path}/
 
-Database 는 MySQL (Amazon RDS) 를 사용하였고
-배포는 docker image 를 만들어 [ainize](https://ainize.ai) 를 통해 배포하였습니다.
+like this
 
-## 주요 기능
+git submodule add --name server https://github.com/roseline124/study-buddies-server.git server/
+git submodule add --name client https://github.com/roseline124/study-buddies-client.git client/
+```
 
-주요 기능은 매일매일 게시물을 등록하여 `연속 학습 일 수`를 쌓는 기능과
-다른 사용자의 게시물을 (내가 올린 게시물을 기반으로) `추천`해 주는 기능 입니다.
+## development
 
-추천 받은 게시물을 통해 다음에 뭘 공부하면 좋을지 학습 대상을 찾게 되고 꾸준히 공부한 내용을 업로드 하여 자신만의 컨텐츠를 쌓아갑니다.
+- typescript
+- server: [apollo-server](https://www.apollographql.com/docs/apollo-server/), `node`, `sequelize`
+- client: [apollo-client](https://www.apollographql.com/docs/react), `react`, `materializecss`
+- database: mysql (AWS RDS)
+- deployment: via [ainize](https://ainize.ai)
 
-`google login` 을 이용하여 사용자가 편리하게 서비스를 이용 할 수 있도록 하였고
-등록한 url 로 부터 `og tag 를 추출`하여 내용을 보기 쉽게 하였습니다.
+## main features
 
-`좋아요` 와 `follow` 기능을 추가하여 인기 컨텐츠를 파악 할 수 있게 하였고
-추후 `인기 컨텐츠`와 카테고리에 대해 관리자가 featured 로 지정 하는 방식으로 교육 과정 제작과 연계 될 수 있을 것으로 기대 합니다.
+**main features**
+`Study Buddies` counts consecutive study days called `streak` when user upload post every day, and recommends other users' posts based on user's posts.
 
-### 프로필 조회
+We added 'like' and 'follow' features to notice popular post.
+It is expected that it will product training courses by designating 'popular posts' and categories as featured in the future.
+
+**effectiveness**
+User can set next study goal via recommended posts and stack a lot of own education contents by posting steadily. user can be motivated to study every day.
+
+**user experience**
+User can sign in comfortably with google login.
+`Study Buddies` extracts post data from `opengraph tag` via url, so user nothing to do except of putting url.
+
+### profile
 
 ![profile](images/profile.png)
 
-### 게시물 등록
+### upload content link
 
 ![post](images/post.png)
 
-### 게시물 조회 및 연속 학습 일 수
+### read contents & streak (consecutive study days)
 
 ![daily-posting](images/daily-posting.png)
 
-### 팔로우
+### follow
 
 ![follow](images/follow.png)
 
-### 추천
+### recommendation
 
 ![recommendation](images/recommendation.png)
