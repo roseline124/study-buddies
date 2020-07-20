@@ -1,6 +1,6 @@
-[submodule "study-buddies-server"]
-	path = study-buddies-server
-	url = https://github.com/angelhack-study-buddies/study-buddies-server.git
-[submodule "study-buddies-client"]
-	path = study-buddies-client
-	url = git@github.com:angelhack-study-buddies/study-buddies-client.git
+[submodule "server"]
+	path = server
+	url = https://github.com/roseline124/study-buddies-server.git
+[submodule "client"]
+	path = client
+	url = https://github.com/roseline124/study-buddies-client.git
