@@ -55,10 +55,12 @@ User can sign in comfortably with google login.
 ### profile
 
 ![profile](images/profile.png)
+![new_profile](images/new_mobile.png)
 
 ### upload content link
 
 ![post](images/post.png)
+![new_post](images/new_mobile-add-post.png)
 
 ### read contents & streak (consecutive study days)
 
@@ -71,3 +73,4 @@ User can sign in comfortably with google login.
 ### recommendation
 
 ![recommendation](images/recommendation.png)
+![recommendation_pc](images/new_profile-overview.png)
